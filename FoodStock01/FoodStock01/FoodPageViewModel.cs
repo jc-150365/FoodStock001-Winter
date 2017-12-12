@@ -25,7 +25,7 @@ namespace FoodStock01
                 Magics = new ObservableCollection<Magic> {
                     new Magic {
                        F_name = food.F_name,
-                       F_Date = food.F_date
+                       F_Date = food.F_date.ToString()
                     }
                 };    
                }
@@ -34,49 +34,8 @@ namespace FoodStock01
 
     public class Magic
     {
-        public int F_no { get; set; }
         public string F_name { get; set; }
         public string F_Date { get; set; }
     }
 
 }
-
-
-
-        /******************ここから試し***********************************************************/
-       /* public FoodPageViewModel()
-        {
-            if (FoodModel.SelectFood() != null)
-            {
-                var query = FoodModel.SelectFood();
-                Magics = new ObservableCollection<Magic>
-                {
-                   foreach (var food in query)
-                {
-                    new Magic
-                    {
-                        F_name = food.F_name,
-                        F_Date = food.F_date
-                    }
-                }
-            };
-        }
-            }
-        }
-
-    /*public class Magic
-    {
-        public string Name { get; set; }
-        public string Spell { get; set; }
-        public string Cbox { get; set; }
-    }*/
-
-    /*public class Magic
-        {
-            public int F_no { get; set; }
-            public string F_name { get; set; }
-            public string F_Date { get; set; }
-        }
-
-    }
-}*/
