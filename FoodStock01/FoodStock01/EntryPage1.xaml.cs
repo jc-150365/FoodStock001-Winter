@@ -42,7 +42,7 @@ namespace FoodStock01
             }
         }
         
-        /***************「登録ボタン」が押された時********************/
+        /***************「登録ボタン」が押された時*********************/
         private void Insert01_Clicked(object sender, EventArgs e)
         {
             //Foodテーブルにインサートする
