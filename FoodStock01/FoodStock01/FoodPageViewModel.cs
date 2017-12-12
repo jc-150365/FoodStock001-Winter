@@ -25,11 +25,11 @@ namespace FoodStock01
                 foreach (var food in query)
                 {
                     Magics = new ObservableCollection<Magic> {
-                    new Magic {
-                       F_name = food.F_name,
-                       F_Date = food.F_date.ToString()
-                    },
-                };
+                        new Magic {
+                            F_name = food.F_name,
+                            F_Date = food.F_date.ToString()
+                        },
+                  　};
                 }
             }
             else
