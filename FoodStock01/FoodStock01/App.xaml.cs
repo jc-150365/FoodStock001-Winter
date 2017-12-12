@@ -10,8 +10,14 @@ namespace FoodStock01
 {
     public partial class App : Application
     {
-        public App()
+        //データベースのパスを格納
+        public static string dbPath;
+
+        //コンストラクタの引数にstring型の引数を追加
+        public App(string dbPath)
         {
+            //AppのdbPathに引数のパスを設定
+            App.dbPath = dbPath;
 
             // TabbedPageをMainPageとしてセットする
             MainPage = new TabbedPage()
