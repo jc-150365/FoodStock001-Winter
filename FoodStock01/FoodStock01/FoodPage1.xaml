@@ -54,7 +54,7 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
 
-                                <Label Text="{Binding Name}" 
+                                <Label Text="{Binding F_name}" 
                                    Grid.Column="0" Grid.Row="0"
                                    FontSize="Large"/>
                                 <Grid Grid.Column="1" Grid.Row="0">
@@ -65,7 +65,7 @@
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
-                                    <Label Text="{Binding Date}" 
+                                    <Label Text="{Binding F_date}" 
                                        Grid.Column="0" Grid.Row="0"
                                        HorizontalOptions="End"
                                        FontSize="Large"/>

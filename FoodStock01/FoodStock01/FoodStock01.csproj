@@ -47,6 +47,7 @@
       <DependentUpon>FoodPage1.xaml</DependentUpon>
     </Compile>
     <Compile Include="FoodPageViewModel.cs" />
+    <Compile Include="Foods.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
