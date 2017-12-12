@@ -46,7 +46,7 @@ namespace FoodStock01
         private void Insert01_Clicked(object sender, EventArgs e)
         {
             //Foodテーブルにインサートする
-            FoodModel.InsertFood(1, NameEntry.Text, FoodPicker.Date.GetDateTimeFormats.GetValue());
+            FoodModel.InsertFood(1, NameEntry.Text, FoodPicker.Date.GetDateTimeFormats.GetValue);
         }
 
         /***************「続けて登録ボタン」が押された時********************/
