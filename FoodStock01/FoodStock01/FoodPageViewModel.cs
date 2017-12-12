@@ -22,14 +22,13 @@ namespace FoodStock01
             {
                 var query = FoodModel.SelectFood();//
 
-                //Magics = new ObservableCollection<Magic> {
                 foreach (var food in query)
                 {
                     Magics = new ObservableCollection<Magic> {
                     new Magic {
                        F_name = food.F_name,
                        F_Date = food.F_date.ToString()
-                    }
+                    },
                 };
                 }
             }
