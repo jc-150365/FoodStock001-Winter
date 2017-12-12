@@ -18,19 +18,33 @@ namespace FoodStock01
 
         public FoodPageViewModel()
         {
-            var query = FoodModel.SelectFood();//
+            if (FoodModel.SelectFood() != null)
+            {
+                var query = FoodModel.SelectFood();//
 
-            //Magics = new ObservableCollection<Magic> {
-                foreach (var food in query) {
-                Magics = new ObservableCollection<Magic> {
+                //Magics = new ObservableCollection<Magic> {
+                foreach (var food in query)
+                {
+                    Magics = new ObservableCollection<Magic> {
                     new Magic {
                        F_name = food.F_name,
                        F_Date = food.F_date.ToString()
                     }
-                };    
-               }
+                };
+                }
+            }
+            else
+            {
+                Magics = new ObservableCollection<Magic> {
+                    new Magic {
+                       F_name = "NoData",
+                       F_Date = "NoData"
+                    }
+                };
+            }
         }
     }
+    
 
     public class Magic
     {
