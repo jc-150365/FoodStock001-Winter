@@ -30,7 +30,6 @@ namespace FoodStock01
 
                     db.Insert(new FoodModel() { F_no = f_no, F_name = f_name, F_date = f_date });
                     db.Commit();
-                    Console.WriteLine(f_name);//
                 }
                 catch (Exception e)
                 {
