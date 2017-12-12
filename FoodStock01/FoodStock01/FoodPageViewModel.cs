@@ -49,7 +49,7 @@ namespace FoodStock01
     public class Magic
     {
         public string F_name { get; set; }
-        public string F_Date { get; set; }
+        public DateTime F_Date { get; set; }
     }
 
 }
