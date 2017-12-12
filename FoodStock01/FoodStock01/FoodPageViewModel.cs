@@ -28,7 +28,7 @@ namespace FoodStock01
                     Magics = new ObservableCollection<Magic> {
                     new Magic {
                        F_name = food.F_name,
-                       F_Date = food.F_date.ToString()
+                       F_Date = food.F_date
                     }
                 };
                 }
