@@ -41,5 +41,18 @@ namespace FoodStock01
                 FoodPicker.IsEnabled = true;
             }
         }
+        
+        /***************「登録ボタン」が押された時********************/
+        private void Insert01_Clicked(object sender, EventArgs e)
+        {
+            //Foodテーブルにインサートする
+            FoodModel.InsertFood(1, NameEntry.Text, FoodPicker.Date);
+        }
+
+        /***************「続けて登録ボタン」が押された時********************/
+        private void Insert02_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
