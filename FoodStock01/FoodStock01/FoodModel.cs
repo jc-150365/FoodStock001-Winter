@@ -17,7 +17,7 @@ namespace FoodStock01
 
         public DateTime F_date { get; set; } //消費期限
 
-        /********************インサートメソッド*********************/
+        /********************インサートメソッド***********************/
         public static void InsertFood(int f_no, string f_name,DateTime f_date)
         {
             //データベースに接続する
