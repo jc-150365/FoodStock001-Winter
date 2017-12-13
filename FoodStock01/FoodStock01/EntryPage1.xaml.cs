@@ -12,6 +12,8 @@ namespace FoodStock01
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EntryPage1 : ContentPage
     {
+        DateTime d;//フードピッカーの値を一時的に保持する
+
         public EntryPage1(string title)
         {
             //タイトル
@@ -46,13 +48,19 @@ namespace FoodStock01
         private void Insert01_Clicked(object sender, EventArgs e)
         {
             //Foodテーブルにインサートする
-            FoodModel.InsertFood(1, NameEntry.Text, FoodPicker.Date);
+            FoodModel.InsertFood(1, NameEntry.Text, d);//
         }
 
         /***************「続けて登録ボタン」が押された時********************/
         private void Insert02_Clicked(object sender, EventArgs e)
         {
 
+        }
+
+        /*************フードピッカーで日付を選択したとき******************/
+        private void FoodPicker_DateSelected(object sender, DateChangedEventArgs e)
+        {
+            d = FoodPicker.Date;
         }
     }
 }
