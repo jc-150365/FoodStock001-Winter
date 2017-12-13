@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Xamarin.Forms;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 
 namespace FoodStock01
@@ -16,6 +19,14 @@ namespace FoodStock01
         //コンストラクタの引数にstring型の引数を追加
         public App(string dbPath)
         {
+
+            AppCenter.Start("ios=7fba10fd-ce22-44ca-a1fa-6758764a6a4e;" + "uwp={Your UWP App secret here};" +
+                   "android={Your Android App secret here}",
+                   typeof(Analytics), typeof(Crashes));
+            AppCenter.LogLevel = LogLevel.Verbose;
+
+
+
             //AppのdbPathに引数のパスを設定
             App.dbPath = dbPath;
 

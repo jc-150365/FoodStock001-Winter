@@ -8,7 +8,13 @@ using SQLite;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-/*
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+
+
 namespace FoodStock01
 {
     class FoodPageViewModel
@@ -28,6 +34,8 @@ namespace FoodStock01
                 
                 foreach (var food in query)
                 {
+                    Analytics.TrackEvent("food name=" + food.F_name + "  food date=" + food.F_date);
+
                     Magics = new ObservableCollection<Magic> {
                         new Magic {
                             F_name = food.F_name,
@@ -56,4 +64,3 @@ namespace FoodStock01
     }
     
 }
-*/

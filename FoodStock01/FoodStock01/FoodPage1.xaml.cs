@@ -13,7 +13,7 @@ namespace FoodStock01
     public partial class FoodPage1 : ContentPage
     {
         /***ここから追加***/
-        public ObservableCollection<Magic> Magics
+        /*public ObservableCollection<Magic> Magics
         {
             get;
             private set;
@@ -32,7 +32,7 @@ namespace FoodStock01
             InitializeComponent();
 
             /***ここから追加***/
-            if (FoodModel.SelectFood() != null)
+            /*if (FoodModel.SelectFood() != null)
             {
                 var query = FoodModel.SelectFood();//
                 
@@ -62,7 +62,7 @@ namespace FoodStock01
     }
     
     /***ここから追加***/
-    public class Magic
+    /*public class Magic
     {
         public string F_name { get; set; }
         public DateTime F_Date { get; set; }
