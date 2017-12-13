@@ -49,6 +49,7 @@ namespace FoodStock01
         {
             //Foodテーブルにインサートする
             FoodModel.InsertFood(1, NameEntry.Text, d);//
+            DisplayAlert(NameEntry.Text, d.ToString(), "ok");
         }
 
         /***************「続けて登録ボタン」が押された時********************/

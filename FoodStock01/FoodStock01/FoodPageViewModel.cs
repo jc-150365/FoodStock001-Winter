@@ -37,7 +37,7 @@ namespace FoodStock01
                 Magics = new ObservableCollection<Magic> {
                     new Magic {
                        F_name = "NoData",
-                       F_Date = "NoData"
+                       F_Date = new DateTime(1970,1,1)
                     }
                 };
             }
