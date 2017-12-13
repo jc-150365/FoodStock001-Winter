@@ -8,10 +8,12 @@ using SQLite;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+/*
 namespace FoodStock01
 {
     class FoodPageViewModel
     {
+        
         public ObservableCollection<Magic> Magics
         {
             get;
@@ -54,3 +56,4 @@ namespace FoodStock01
     }
     
 }
+*/
