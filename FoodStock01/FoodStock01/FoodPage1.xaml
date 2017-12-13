@@ -6,7 +6,7 @@
              x:Class="FoodStock01.FoodPage1">
 
     <ContentPage.BindingContext>
-        <local:FoodViewModel />
+        <local:FoodPageViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.Padding>
