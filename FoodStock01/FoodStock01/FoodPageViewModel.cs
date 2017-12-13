@@ -39,7 +39,7 @@ namespace FoodStock01
                     Magics = new ObservableCollection<Magic> {
                         new Magic {
                             F_name = food.F_name,
-                            F_Date = food.F_date
+                            F_date = food.F_date
                         },
                   　};
                 }
@@ -49,7 +49,7 @@ namespace FoodStock01
                 Magics = new ObservableCollection<Magic> {
                     new Magic {
                        F_name = "NoData",
-                       F_Date = new DateTime(1970,1,1)
+                       F_date = new DateTime(1970,1,1)
                     }
                 };
             }
@@ -60,7 +60,7 @@ namespace FoodStock01
     public class Magic
     {
         public string F_name { get; set; }
-        public DateTime F_Date { get; set; }
+        public DateTime F_date { get; set; }
     }
     
 }
