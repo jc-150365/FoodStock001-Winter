@@ -30,19 +30,21 @@ namespace FoodStock01
         {
             if (FoodModel.SelectFood() != null)
             {
-                var query = FoodModel.SelectFood();//
-                
+                var query = FoodModel.SelectFood();
+
+                //Magics = new ObservableCollection<Magic>;
+
                 foreach (var food in query)
                 {
                     Analytics.TrackEvent("food name=" + food.F_name + "  food date=" + food.F_date);
 
-                    //Magics = new ObservableCollection<Magic> {
-                    new Magic
-                    {
-                        F_name = food.F_name,
-                        F_date = food.F_date
-                    };
-                  　//};
+                    Magics = new ObservableCollection<Magic> {
+                        new Magic
+                        {
+                            F_name = food.F_name,
+                            F_date = food.F_date
+                        }
+                  　};
                 }
             }
             else
