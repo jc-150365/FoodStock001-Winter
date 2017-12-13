@@ -61,6 +61,7 @@ namespace FoodStock01
         /*************フードピッカーで日付を選択したとき******************/
         private void FoodPicker_DateSelected(object sender, DateChangedEventArgs e)
         {
+            //listView.ItemTemplate.SetBinding(TextCell.DetailProperty, new Binding("CreatedAt", stringFormat: "{0:yyy/MM/dd hh:mm}"));
             d = FoodPicker.Date;
         }
     }
