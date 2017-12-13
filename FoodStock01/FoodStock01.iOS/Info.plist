@@ -56,7 +56,5 @@
 	<string>This app needs access to the photo gallery.</string>
 	<key>UIMainStoryboardFile</key>
 	<string>LaunchScreen</string>
-	<key>MinimumOSVersion</key>
-	<string>10.3</string>
 </dict>
 </plist>

@@ -36,12 +36,13 @@ namespace FoodStock01
                 {
                     Analytics.TrackEvent("food name=" + food.F_name + "  food date=" + food.F_date);
 
-                    Magics = new ObservableCollection<Magic> {
-                        new Magic {
-                            F_name = food.F_name,
-                            F_date = food.F_date
-                        },
-                  　};
+                    //Magics = new ObservableCollection<Magic> {
+                    new Magic
+                    {
+                        F_name = food.F_name,
+                        F_date = food.F_date
+                    };
+                  　//};
                 }
             }
             else
