@@ -11,6 +11,8 @@ namespace FoodStock01
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FoodPage1 : ContentPage
     {
+     
+
         public FoodPage1(string title)
         {
 
@@ -22,7 +24,15 @@ namespace FoodStock01
 
             InitializeComponent();
 
-            
+            //
+            var q = FoodModel.SelectFood();
+
+            foreach (var food in query)
+            { 
+
+                DisplayAlert(FoodModel.SelectFood(), "ok");
+            }
+            //
         }
     }
 }

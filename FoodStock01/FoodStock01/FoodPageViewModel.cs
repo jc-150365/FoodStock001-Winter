@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace FoodStock01
 {
@@ -15,13 +17,13 @@ namespace FoodStock01
             get;
             private set;
         }
-
+        
         public FoodPageViewModel()
         {
             if (FoodModel.SelectFood() != null)
             {
                 var query = FoodModel.SelectFood();//
-
+                
                 foreach (var food in query)
                 {
                     Magics = new ObservableCollection<Magic> {
@@ -50,5 +52,5 @@ namespace FoodStock01
         public string F_name { get; set; }
         public DateTime F_Date { get; set; }
     }
-
+    
 }
