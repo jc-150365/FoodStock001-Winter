@@ -73,6 +73,7 @@
                                        Grid.Column="1" Grid.Row="0"
                                        HorizontalOptions="Start"
                                        VerticalOptions="End"/>
+                                    <Button Text="使い切った"/>
                                 </Grid>
                             </Grid>
                         </ViewCell>

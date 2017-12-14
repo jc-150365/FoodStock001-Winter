@@ -44,7 +44,6 @@ namespace FoodStock01
         {
             using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
             {
-
                 try
                 {
                     //データベースに指定したSQLを発行
