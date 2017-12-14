@@ -60,6 +60,7 @@ namespace FoodStock01
 
     public class Food
     {
+        public int F_no { get; set; }//余計かも
         public string F_name { get; set; }
         //public DateTime F_date { get; set; }
         public int F_result { get; set; }

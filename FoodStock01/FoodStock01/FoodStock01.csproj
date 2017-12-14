@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingPage.cs" />
+    <Compile Include="StockFoodModel.cs" />
     <Compile Include="StockPage.cs" />
     <Compile Include="StockPage1.xaml.cs">
       <DependentUpon>StockPage1.xaml</DependentUpon>
