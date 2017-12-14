@@ -19,15 +19,17 @@ namespace FoodStock01
 {
     class FoodPageViewModel
     {
+        /*
         public ObservableCollection<Magic> Magics
         {
             get;
             private set;
         }
+        
 
         public FoodPageViewModel()
         {
-            /*
+            
             if (FoodModel.SelectFood() != null)
             {
                 var query = FoodModel.SelectFood();
@@ -46,11 +48,7 @@ namespace FoodStock01
                     };
                 }             
             }
-            */
-            if(FoodModel.SelectFood() != null)
-            {
-                Magics = new ObservableCollection<Magic>(FoodModel.SelectFood());
-            }
+            
             else
             {
                 Magics = new ObservableCollection<Magic> {
@@ -60,14 +58,42 @@ namespace FoodStock01
                     }
                 };
             }
+        }*/
+
+        public ObservableCollection<FoodModel> Foods
+        {
+            get;
+            private set;
+        }
+
+
+        public FoodPageViewModel()
+        {
+
+            if (FoodModel.SelectFood() != null)
+            {
+                ObservableCollection<FoodModel> Foods = new ObservableCollection<FoodModel>(FoodModel.SelectFood());
+            }
+            /*else
+            {
+                Magics = new ObservableCollection<FoodModel> {
+                    new Magic {
+                       F_name = "NoData",
+                       F_date = new DateTime(1970,1,1)
+                    }
+                };
+            }*/
+
+
         }
     }
-    
 
+    /*
     public class Magic
     {
         public string F_name { get; set; }
         public DateTime F_date { get; set; }
     }
+    */
     
 }

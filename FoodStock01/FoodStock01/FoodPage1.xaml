@@ -41,7 +41,7 @@
             </Grid>
 
             <ListView HasUnevenRows="true"
-                  ItemsSource="{Binding Magics}">
+                  ItemsSource="{Binding Foods}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
