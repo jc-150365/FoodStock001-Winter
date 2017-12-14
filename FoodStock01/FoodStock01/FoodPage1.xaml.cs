@@ -19,10 +19,7 @@ namespace FoodStock01
             //アイコン
             Icon = "apple32.png";
 
-            InitializeComponent();
-
-            FoodPageViewModel model = new FoodPageViewModel();
-     
+            InitializeComponent();   
         }
     }       
 }

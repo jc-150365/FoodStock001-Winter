@@ -60,6 +60,8 @@ namespace FoodStock01
 
             FoodModel.InsertFood(1, NameEntry.Text, result);//
             DisplayAlert(NameEntry.Text, result.ToString(), "ok");
+
+            FoodPage1 call = new FoodPage1("食材");
         }
 
         /***************「すべて削除ボタン」が押された時********************/
