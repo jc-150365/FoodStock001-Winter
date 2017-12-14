@@ -55,7 +55,7 @@ namespace FoodStock01
                 var query = FoodModel.SelectFood();
 
                 Foods = new ObservableCollection<Food>();
-                    foreach (var foods in query)
+                    foreach (var food in query)
                     {
                     Food f = new Food
                     {
