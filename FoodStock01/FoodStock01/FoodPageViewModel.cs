@@ -19,20 +19,25 @@ namespace FoodStock01
 {
     class FoodPageViewModel
     {
-        
+        /*
         public ObservableCollection<Magic> Magics
         {
             get;
             private set;
         }
+        */
+
+        private ObservableCollection<Magic> Magics;
         
+
         public FoodPageViewModel()
         {
+            /*
             if (FoodModel.SelectFood() != null)
             {
                 var query = FoodModel.SelectFood();
 
-                /*
+                
                 foreach (var food in query)
                 {
                     Analytics.TrackEvent("food name=" + food.F_name + "  food date=" + food.F_date);
@@ -44,22 +49,12 @@ namespace FoodStock01
                             F_date = food.F_date
                         }
                     };
-                }
-                */
-
-                /***ここから追加（おかしくなったら消す）***/
-                Magics = new ObservableCollection<Magic>
-                { 
-                    //foreach (var food in query)
-                    //{
-                        new Magic
-                        {
-                            F_name = food.F_name,
-                            F_date = food.F_date
-                        }
-                    //}
-                };
-                /***ここまで追加（おかしくなったら消す）***/
+                }             
+            }
+            */
+            if(FoodModel.SelectFood() != null)
+            {
+                new ObservableCollection<FoodModel>(FoodModel.SelectFood());
             }
             else
             {
