@@ -40,7 +40,6 @@
   
             </Grid>
 
-            <TapGestureRecognizer x:Name="Tap" Tapped="Tap_Tapped">
             <ListView HasUnevenRows="true"
                   ItemsSource="{Binding Foods}">
                 <ListView.ItemTemplate>
@@ -80,7 +79,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            </TapGestureRecognizer>
 
             <Label Text="検索ワード" x:Name="Searchword"/>
         </StackLayout>

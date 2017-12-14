@@ -21,10 +21,5 @@ namespace FoodStock01
 
             InitializeComponent();   
         }
-
-        private void Tap_Tapped(object sender, EventArgs e)
-        {
-            DisplayAlert("タップ", "タップされました", "OK");
-        }
     }       
 }
