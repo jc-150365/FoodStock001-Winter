@@ -53,10 +53,10 @@ namespace FoodStock01
             DisplayAlert(NameEntry.Text, d.ToString(), "ok");
         }
 
-        /***************「続けて登録ボタン」が押された時********************/
+        /***************「すべて削除ボタン」が押された時********************/
         private void Insert02_Clicked(object sender, EventArgs e)
         {
-
+            FoodModel.DeleteAllFood();
         }
 
         /*************フードピッカーで日付を選択したとき******************/

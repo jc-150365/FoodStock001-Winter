@@ -82,5 +82,27 @@ namespace FoodStock01
                 }
             }
         }
+
+        /********************オールデリートメソッド*************************************/
+        public static void DeleteAllFood()
+        {
+            //データベースに接続する
+            using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
+            {
+                try
+                {
+                    //データベースにFoodテーブルを作成する
+                    db.CreateTable<FoodModel>();
+
+                    db.DeleteAll<FoodModel>();//デリートで渡す値は主キーじゃないといけない説
+                    db.Commit();
+                }
+                catch (Exception e)
+                {
+                    db.Rollback();
+                    System.Diagnostics.Debug.WriteLine(e);
+                }
+            }
+        }
     }
 }

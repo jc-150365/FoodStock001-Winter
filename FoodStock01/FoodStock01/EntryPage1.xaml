@@ -110,7 +110,7 @@
                     x:Name="Insert01"
                     Clicked="Insert01_Clicked"/>
 
-                <Button Text="続けて登録"
+                <Button Text="すべて削除"
                     Grid.Column="1" Grid.Row="0"
                     x:Name="Insert02"
                     Clicked="Insert02_Clicked"/>
