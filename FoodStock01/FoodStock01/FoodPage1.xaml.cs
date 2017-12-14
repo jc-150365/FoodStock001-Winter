@@ -22,10 +22,5 @@ namespace FoodStock01
             InitializeComponent();
      
         }
-
-        private void Used_Button_Clicked(object sender, EventArgs e)
-        {
-            FoodModel.DeleteFood(1);
-        }
     }       
 }

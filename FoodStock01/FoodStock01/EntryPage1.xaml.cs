@@ -13,6 +13,7 @@ namespace FoodStock01
     public partial class EntryPage1 : ContentPage
     {
         DateTime d;//フードピッカーの値を一時的に保持する
+        TimeSpan s;
 
         public EntryPage1(string title)
         {
@@ -48,8 +49,8 @@ namespace FoodStock01
         private void Insert01_Clicked(object sender, EventArgs e)
         {
             //Foodテーブルにインサートする
-            FoodModel.InsertFood(1, NameEntry.Text, d);//
-            DisplayAlert(NameEntry.Text, d.ToString(), "ok");
+            FoodModel.InsertFood(1, NameEntry.Text, s);//
+            DisplayAlert(NameEntry.Text, s.ToString(), "ok");
         }
 
         /***************「続けて登録ボタン」が押された時********************/
@@ -62,6 +63,7 @@ namespace FoodStock01
         private void FoodPicker_DateSelected(object sender, DateChangedEventArgs e)
         {
             d = FoodPicker.Date;
+            s = DateTime.Now - d;
         }
     }
 }
