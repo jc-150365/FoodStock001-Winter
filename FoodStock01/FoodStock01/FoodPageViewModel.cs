@@ -19,8 +19,8 @@ namespace FoodStock01
 {
     class FoodPageViewModel
     {
-        /*
-        public ObservableCollection<Magic> Magics
+        
+        public ObservableCollection<Food> Foods
         {
             get;
             private set;
@@ -39,8 +39,8 @@ namespace FoodStock01
                 {
                     Analytics.TrackEvent("food name=" + food.F_name + "  food date=" + food.F_date);
 
-                    Magics = new ObservableCollection<Magic>{
-                        new Magic
+                    Foods = new ObservableCollection<Food>{
+                        new Food
                         {
                             F_name = food.F_name,
                             F_date = food.F_date
@@ -51,34 +51,14 @@ namespace FoodStock01
             
             else
             {
-                Magics = new ObservableCollection<Magic> {
-                    new Magic {
+                Foods = new ObservableCollection<Food> {
+                    new Food {
                        F_name = "NoData",
                        F_date = new DateTime(1970,1,1)
                     }
                 };
             }
-        }*/
-
-        public ObservableCollection<FoodModel> Foods;
-       
-        public FoodPageViewModel()
-        {
-
-            if (FoodModel.SelectFood() != null)
-            {
-                Foods = new ObservableCollection<FoodModel>(FoodModel.SelectFood());
-            }
-            /*else
-            {
-                Magics = new ObservableCollection<FoodModel> {
-                    new Magic {
-                       F_name = "NoData",
-                       F_date = new DateTime(1970,1,1)
-                    }
-                };
-            }*/
-
+        }
 
         }
     }
@@ -91,6 +71,13 @@ namespace FoodStock01
     }
     */
 
-    
-    
+    public class Food
+    {
+        public string F_name { get; set; }
+        public DateTime F_date { get; set; }
+    }
+
+
+
+
 }
