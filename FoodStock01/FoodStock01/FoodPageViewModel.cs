@@ -8,8 +8,6 @@ using SQLite;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;

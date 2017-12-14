@@ -17,8 +17,10 @@ namespace FoodStock01
 
         public DateTime F_date { get; set; } //消費期限
 
+        public TimeSpan F_span { get; set; } //現在日時との差
+
         /********************インサートメソッド**********************/
-        public static void InsertFood(int f_no, string f_name,DateTime f_date)
+        /*public static void InsertFood(int f_no, string f_name,DateTime f_date)
         {
             //データベースに接続する
             using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
@@ -29,6 +31,27 @@ namespace FoodStock01
                     db.CreateTable<FoodModel>();
 
                     db.Insert(new FoodModel() { F_no = f_no, F_name = f_name, F_date = f_date });
+                    db.Commit();
+                }
+                catch (Exception e)
+                {
+                    db.Rollback();
+                    System.Diagnostics.Debug.WriteLine(e);
+                }
+            }
+        }*/
+
+        public static void InsertFood(int f_no, string f_name, TimeSpan f_span)
+        {
+            //データベースに接続する
+            using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
+            {
+                try
+                {
+                    //データベースにFoodテーブルを作成する
+                    db.CreateTable<FoodModel>();
+
+                    db.Insert(new FoodModel() { F_no = f_no, F_name = f_name, F_span = f_span });
                     db.Commit();
                 }
                 catch (Exception e)
