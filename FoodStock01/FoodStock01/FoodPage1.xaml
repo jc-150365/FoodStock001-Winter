@@ -73,7 +73,9 @@
                                        Grid.Column="1" Grid.Row="0"
                                        HorizontalOptions="Start"
                                        VerticalOptions="End"/>
-                                    <Button Text="使い切った"/>
+                                    <Button Text="使い切った"
+                                            x:Name="Used_Button"
+                                            Clicked="Used_Button_Clicked"/>
                                 </Grid>
                             </Grid>
                         </ViewCell>
