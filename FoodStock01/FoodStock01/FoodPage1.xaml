@@ -65,7 +65,7 @@
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
-                                    <Label Text="{Binding F_date}" 
+                                    <Label Text="{Binding F_result}" 
                                        Grid.Column="0" Grid.Row="0"
                                        HorizontalOptions="End"
                                        FontSize="Large"/>

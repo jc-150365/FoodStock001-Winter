@@ -37,7 +37,7 @@ namespace FoodStock01
                     Food f = new Food
                     {
                         F_name = food.F_name,
-                        F_date = food.F_date
+                        F_result = food.F_result
                     };
                     Foods.Add(f);
                     }
@@ -48,7 +48,8 @@ namespace FoodStock01
                 Foods = new ObservableCollection<Food> {
                     new Food {
                        F_name = "NoData",
-                       F_date = new DateTime(1970,1,1)
+                       //F_date = new DateTime(1970,1,1)
+                       F_result = 999
                     }
                 };
             }
@@ -60,7 +61,8 @@ namespace FoodStock01
     public class Food
     {
         public string F_name { get; set; }
-        public DateTime F_date { get; set; }
+        //public DateTime F_date { get; set; }
+        public int F_result { get; set; }
     }
 }
 
