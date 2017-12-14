@@ -60,19 +60,14 @@ namespace FoodStock01
             }
         }*/
 
-        public ObservableCollection<FoodModel> Foods
-        {
-            get;
-            private set;
-        }
-
-
+        public ObservableCollection<FoodModel> Foods;
+       
         public FoodPageViewModel()
         {
 
             if (FoodModel.SelectFood() != null)
             {
-                ObservableCollection<FoodModel> Foods = new ObservableCollection<FoodModel>(FoodModel.SelectFood());
+                Foods = new ObservableCollection<FoodModel>(FoodModel.SelectFood());
             }
             /*else
             {
@@ -95,5 +90,7 @@ namespace FoodStock01
         public DateTime F_date { get; set; }
     }
     */
+
+    
     
 }
