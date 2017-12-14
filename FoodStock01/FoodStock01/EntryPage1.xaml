@@ -58,7 +58,7 @@
 
                 <StackLayout Margin="0, 0, 0, 10">
                     <Label Text="消費期限・賞味期限（食材のみ）"/>
-                    <DatePicker Format="D"
+                    <DatePicker Format="d"
                             x:Name="FoodPicker"
                             IsEnabled="True"
                             DateSelected="FoodPicker_DateSelected"/>

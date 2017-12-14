@@ -49,8 +49,8 @@ namespace FoodStock01
         private void Insert01_Clicked(object sender, EventArgs e)
         {
             //Foodテーブルにインサートする
-            FoodModel.InsertFood(1, NameEntry.Text, s);//
-            DisplayAlert(NameEntry.Text, s.ToString(), "ok");
+            FoodModel.InsertFood(1, NameEntry.Text, d);//
+            DisplayAlert(NameEntry.Text, d.ToString(), "ok");
         }
 
         /***************「続けて登録ボタン」が押された時********************/
@@ -63,7 +63,6 @@ namespace FoodStock01
         private void FoodPicker_DateSelected(object sender, DateChangedEventArgs e)
         {
             d = FoodPicker.Date;
-            s = DateTime.Now - d;
         }
     }
 }
