@@ -19,22 +19,22 @@ namespace FoodStock01
 {
     class FoodPageViewModel
     {
-        
+
         public ObservableCollection<Food> Foods
         {
             get;
             private set;
         }
-        
+
 
         public FoodPageViewModel()
         {
-            
+
             if (FoodModel.SelectFood() != null)
             {
                 var query = FoodModel.SelectFood();
 
-                
+
                 foreach (var food in query)
                 {
                     Analytics.TrackEvent("food name=" + food.F_name + "  food date=" + food.F_date);
@@ -46,9 +46,9 @@ namespace FoodStock01
                             F_date = food.F_date
                         }
                     };
-                }             
+                }
             }
-            
+
             else
             {
                 Foods = new ObservableCollection<Food> {
@@ -60,24 +60,13 @@ namespace FoodStock01
             }
         }
 
-        }
     }
 
-    /*
-    public class Magic
-    {
-        public string F_name { get; set; }
-        public DateTime F_date { get; set; }
-    }
-    */
 
     public class Food
     {
         public string F_name { get; set; }
         public DateTime F_date { get; set; }
     }
-
-
-
-
 }
+
