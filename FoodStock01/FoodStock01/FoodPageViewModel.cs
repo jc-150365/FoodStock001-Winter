@@ -19,17 +19,17 @@ namespace FoodStock01
 {
     class FoodPageViewModel
     {
-
+        /*
         public ObservableCollection<Food> Foods
         {
             get;
             private set;
         }
-
+        */
 
         public FoodPageViewModel()
         {
-
+            /*
             if (FoodModel.SelectFood() != null)
             {
                 var query = FoodModel.SelectFood();
@@ -48,7 +48,24 @@ namespace FoodStock01
                     };
                 }
             }
+            */
 
+            if (FoodModel.SelectFood() != null)
+            {
+                var query = FoodModel.SelectFood();
+
+                Foods = new ObservableCollection<Food>
+                { };
+                    foreach (var foods in query)
+                    {
+                        Foods = new Food
+                        {
+                            F_name = food.F_name,
+                            F_date = food.F_date
+                        };
+                    }
+                 
+            }
             else
             {
                 Foods = new ObservableCollection<Food> {
