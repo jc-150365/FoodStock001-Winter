@@ -19,16 +19,11 @@ namespace FoodStock01
 {
     class FoodPageViewModel
     {
-        /*
         public ObservableCollection<Magic> Magics
         {
             get;
             private set;
         }
-        */
-
-        private ObservableCollection<Magic> Magics;
-        
 
         public FoodPageViewModel()
         {
@@ -54,7 +49,7 @@ namespace FoodStock01
             */
             if(FoodModel.SelectFood() != null)
             {
-                new ObservableCollection<FoodModel>(FoodModel.SelectFood());
+                Magics = new ObservableCollection<Magic>(FoodModel.SelectFood());
             }
             else
             {
