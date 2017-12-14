@@ -23,7 +23,7 @@ namespace FoodStock01
 
         public int F_result { get; set; } //現在日時との差（後で使うかも）
 
-        /********************インサートメソッド**********************/
+        /********************インサートメソッド*********************/
         /*public static void InsertFood(int f_no, string f_name,DateTime f_date)
         {
             //データベースに接続する
