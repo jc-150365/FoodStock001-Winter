@@ -62,7 +62,10 @@ namespace FoodStock01
         /*************フードピッカーで日付を選択したとき******************/
         private void FoodPicker_DateSelected(object sender, DateChangedEventArgs e)
         {
-            d = FoodPicker.Date;
+            //d = FoodPicker.Date;
+            d = new DateTime(FoodPicker.Date.Year, FoodPicker.Date.Month, FoodPicker.Date.Day);
+     
+
         }
     }
 }
