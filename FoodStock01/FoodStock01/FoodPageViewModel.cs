@@ -29,28 +29,7 @@ namespace FoodStock01
 
         public FoodPageViewModel()
         {
-            /*
-            if (FoodModel.SelectFood() != null)
-            {
-                var query = FoodModel.SelectFood();
-
-
-                foreach (var food in query)
-                {
-                    Analytics.TrackEvent("food name=" + food.F_name + "  food date=" + food.F_date);
-
-                    Foods = new ObservableCollection<Food>{
-                        new Food
-                        {
-                            F_name = food.F_name,
-                            F_date = food.F_date
-                        }
-                    };
-                }
-            }
-            */
-
-            if (FoodModel.SelectFood() != null)
+           if (FoodModel.SelectFood() != null)
             {
                 var query = FoodModel.SelectFood();
 
