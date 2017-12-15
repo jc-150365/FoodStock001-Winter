@@ -75,7 +75,7 @@ namespace FoodStock01
                 try
                 {
                     //データベースに指定したSQLを発行
-                    return db.Query<FoodModel>("SELECT * FROM [Food] ORDER BY [F_date]");
+                    return db.Query<FoodModel>("SELECT * FROM [Food] ORDER BY [F_result]");
 
                 }
                 catch (Exception e)
