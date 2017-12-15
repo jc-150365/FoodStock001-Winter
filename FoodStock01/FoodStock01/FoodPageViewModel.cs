@@ -27,7 +27,7 @@ namespace FoodStock01
 
         public FoodPageViewModel()
         {
-           if (FoodModel.SelectFood() != null)
+           if (FoodModel.SelectFood() != null)//
             {
                 var query = FoodModel.SelectFood();
 
